@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "verified_at": "2026-10-01",
   "rules": {
     "preferred_license": [
@@ -8,7 +8,9 @@
     "accepted_permissive_licenses": [
       "BSD-2-Clause",
       "BSD-3-Clause",
-      "Apache-2.0"
+      "Apache-2.0",
+      "ISC",
+      "PostgreSQL"
     ],
     "exclude_by_default": [
       "AGPL-3.0",
@@ -911,6 +913,379 @@
       ],
       "composable": true,
       "commercial_use": true
+    },
+    {
+      "name": "Better Auth",
+      "repo": "https://github.com/better-auth/better-auth",
+      "license": "MIT",
+      "category": [
+        "auth",
+        "saas",
+        "security"
+      ],
+      "type": "component",
+      "stack": [
+        "TypeScript"
+      ],
+      "provides": [
+        "email/password auth",
+        "OAuth",
+        "sessions",
+        "organizations",
+        "2FA",
+        "passkeys"
+      ],
+      "can_build": [
+        "SaaS",
+        "membership products",
+        "customer portals",
+        "multi-tenant apps"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "OpenFGA",
+      "repo": "https://github.com/openfga/openfga",
+      "license": "Apache-2.0",
+      "category": [
+        "auth",
+        "authorization",
+        "rbac"
+      ],
+      "type": "standalone",
+      "stack": [
+        "Go"
+      ],
+      "provides": [
+        "relationship-based authorization",
+        "fine-grained permissions",
+        "authorization API"
+      ],
+      "can_build": [
+        "multi-tenant SaaS",
+        "marketplaces",
+        "document permissions",
+        "enterprise apps"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "SeaweedFS",
+      "repo": "https://github.com/seaweedfs/seaweedfs",
+      "license": "Apache-2.0",
+      "category": [
+        "storage",
+        "files",
+        "database"
+      ],
+      "type": "standalone",
+      "stack": [
+        "Go"
+      ],
+      "provides": [
+        "distributed file storage",
+        "object storage",
+        "S3-compatible APIs"
+      ],
+      "can_build": [
+        "file platforms",
+        "media storage",
+        "document systems",
+        "backup services"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "DuckDB",
+      "repo": "https://github.com/duckdb/duckdb",
+      "license": "MIT",
+      "category": [
+        "database",
+        "analytics",
+        "data"
+      ],
+      "type": "database",
+      "stack": [
+        "C++",
+        "SQL"
+      ],
+      "provides": [
+        "embedded analytical database",
+        "SQL analytics",
+        "local data processing"
+      ],
+      "can_build": [
+        "analytics tools",
+        "data importers",
+        "reporting apps",
+        "desktop data products"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "ClickHouse",
+      "repo": "https://github.com/ClickHouse/ClickHouse",
+      "license": "Apache-2.0",
+      "category": [
+        "database",
+        "analytics",
+        "data"
+      ],
+      "type": "database",
+      "stack": [
+        "C++",
+        "SQL"
+      ],
+      "provides": [
+        "columnar database",
+        "OLAP",
+        "high-volume analytics"
+      ],
+      "can_build": [
+        "product analytics",
+        "event analytics",
+        "BI tools",
+        "log analytics"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Valkey",
+      "repo": "https://github.com/valkey-io/valkey",
+      "license": "BSD-3-Clause",
+      "category": [
+        "database",
+        "cache",
+        "realtime"
+      ],
+      "type": "database",
+      "stack": [
+        "C"
+      ],
+      "provides": [
+        "in-memory key-value store",
+        "caching",
+        "queues",
+        "pub/sub"
+      ],
+      "can_build": [
+        "SaaS caching",
+        "sessions",
+        "rate limiting",
+        "real-time systems"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Ghost",
+      "repo": "https://github.com/TryGhost/Ghost",
+      "license": "MIT",
+      "category": [
+        "cms",
+        "publishing",
+        "membership"
+      ],
+      "type": "standalone",
+      "stack": [
+        "Node.js",
+        "JavaScript"
+      ],
+      "provides": [
+        "publishing CMS",
+        "memberships",
+        "content",
+        "newsletters"
+      ],
+      "can_build": [
+        "content SaaS",
+        "membership sites",
+        "publishing platforms",
+        "creator products"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Frappe Framework",
+      "repo": "https://github.com/frappe/frappe",
+      "license": "MIT",
+      "category": [
+        "backend",
+        "erp",
+        "business"
+      ],
+      "type": "framework",
+      "stack": [
+        "Python",
+        "JavaScript"
+      ],
+      "provides": [
+        "business application framework",
+        "ORM",
+        "permissions",
+        "forms",
+        "reports",
+        "REST API"
+      ],
+      "can_build": [
+        "ERP systems",
+        "CRM",
+        "internal tools",
+        "business operations software"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Vite",
+      "repo": "https://github.com/vitejs/vite",
+      "license": "MIT",
+      "category": [
+        "frontend",
+        "build-tools"
+      ],
+      "type": "foundation",
+      "stack": [
+        "JavaScript",
+        "TypeScript"
+      ],
+      "provides": [
+        "fast development server",
+        "bundling",
+        "plugin system"
+      ],
+      "can_build": [
+        "web apps",
+        "widgets",
+        "libraries",
+        "extensions"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Elysia",
+      "repo": "https://github.com/elysiajs/elysia",
+      "license": "MIT",
+      "category": [
+        "api",
+        "backend"
+      ],
+      "type": "framework",
+      "stack": [
+        "TypeScript",
+        "Bun"
+      ],
+      "provides": [
+        "typed API routing",
+        "validation",
+        "middleware",
+        "OpenAPI integration"
+      ],
+      "can_build": [
+        "APIs",
+        "serverless services",
+        "Bun backends",
+        "AI APIs"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "NestJS",
+      "repo": "https://github.com/nestjs/nest",
+      "license": "MIT",
+      "category": [
+        "api",
+        "backend",
+        "architecture"
+      ],
+      "type": "framework",
+      "stack": [
+        "TypeScript",
+        "Node.js"
+      ],
+      "provides": [
+        "modular backend architecture",
+        "dependency injection",
+        "REST",
+        "GraphQL",
+        "WebSockets"
+      ],
+      "can_build": [
+        "enterprise APIs",
+        "SaaS backends",
+        "microservices",
+        "real-time applications"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Temporal TypeScript SDK",
+      "repo": "https://github.com/temporalio/sdk-typescript",
+      "license": "MIT",
+      "category": [
+        "workflows",
+        "jobs",
+        "automation"
+      ],
+      "type": "component",
+      "stack": [
+        "TypeScript"
+      ],
+      "provides": [
+        "durable execution",
+        "workflow orchestration",
+        "retries",
+        "timers",
+        "long-running jobs"
+      ],
+      "can_build": [
+        "workflow SaaS",
+        "payment workflows",
+        "AI agents",
+        "business automation"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Bun",
+      "repo": "https://github.com/oven-sh/bun",
+      "license": "NOASSERTION",
+      "category": [
+        "runtime",
+        "backend",
+        "tooling"
+      ],
+      "type": "runtime",
+      "stack": [
+        "TypeScript",
+        "JavaScript",
+        "Zig"
+      ],
+      "provides": [
+        "JavaScript runtime",
+        "package manager",
+        "bundler",
+        "test runner"
+      ],
+      "can_build": [
+        "APIs",
+        "web apps",
+        "CLIs",
+        "developer tools"
+      ],
+      "composable": true,
+      "commercial_use": true,
+      "notes": "GitHub API currently reports NOASSERTION for the repository license, so this is informational only and should not be treated as core-verified until the repository license is manually confirmed."
     }
   ]
 }
