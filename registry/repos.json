@@ -1,21 +1,55 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "verified_at": "2026-10-01",
   "rules": {
-    "preferred_license": ["MIT"],
-    "accepted_permissive_licenses": ["BSD-2-Clause", "BSD-3-Clause", "Apache-2.0"],
-    "exclude_by_default": ["AGPL-3.0", "GPL-3.0", "SSPL-1.0", "BSL-1.1", "source-available", "fair-code", "NOASSERTION"]
+    "preferred_license": [
+      "MIT"
+    ],
+    "accepted_permissive_licenses": [
+      "BSD-2-Clause",
+      "BSD-3-Clause",
+      "Apache-2.0"
+    ],
+    "exclude_by_default": [
+      "AGPL-3.0",
+      "GPL-3.0",
+      "SSPL-1.0",
+      "BSL-1.1",
+      "source-available",
+      "fair-code",
+      "NOASSERTION"
+    ]
   },
   "repos": [
     {
       "name": "PocketBase",
       "repo": "https://github.com/pocketbase/pocketbase",
       "license": "MIT",
-      "category": ["backend", "auth", "database", "realtime"],
+      "category": [
+        "backend",
+        "auth",
+        "database",
+        "realtime"
+      ],
       "type": "standalone",
-      "stack": ["Go"],
-      "provides": ["embedded database", "authentication", "file storage", "realtime subscriptions", "REST API", "admin UI"],
-      "can_build": ["small SaaS", "internal tools", "customer portals", "mobile backends", "CRUD applications"],
+      "stack": [
+        "Go"
+      ],
+      "provides": [
+        "embedded database",
+        "authentication",
+        "file storage",
+        "realtime subscriptions",
+        "REST API",
+        "admin UI"
+      ],
+      "can_build": [
+        "small SaaS",
+        "internal tools",
+        "customer portals",
+        "mobile backends",
+        "CRUD applications"
+      ],
       "composable": true,
       "commercial_use": true,
       "notes": "Single-binary backend. Strong option when a full managed backend is unnecessary."
@@ -24,11 +58,33 @@
       "name": "Create T3 App",
       "repo": "https://github.com/t3-oss/create-t3-app",
       "license": "MIT",
-      "category": ["saas", "frontend", "api", "database"],
+      "category": [
+        "saas",
+        "frontend",
+        "api",
+        "database"
+      ],
       "type": "foundation",
-      "stack": ["Next.js", "TypeScript", "tRPC", "Prisma", "Tailwind"],
-      "provides": ["full-stack app scaffolding", "type-safe API patterns", "database integration", "authentication options"],
-      "can_build": ["SaaS", "dashboards", "marketplaces", "internal tools", "customer portals"],
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "tRPC",
+        "Prisma",
+        "Tailwind"
+      ],
+      "provides": [
+        "full-stack app scaffolding",
+        "type-safe API patterns",
+        "database integration",
+        "authentication options"
+      ],
+      "can_build": [
+        "SaaS",
+        "dashboards",
+        "marketplaces",
+        "internal tools",
+        "customer portals"
+      ],
       "composable": true,
       "commercial_use": true
     },
@@ -36,11 +92,32 @@
       "name": "shadcn/ui",
       "repo": "https://github.com/shadcn-ui/ui",
       "license": "MIT",
-      "category": ["ui", "components", "design-system"],
+      "category": [
+        "ui",
+        "components",
+        "design-system"
+      ],
       "type": "component",
-      "stack": ["React", "TypeScript"],
-      "provides": ["accessible UI components", "dialogs", "forms", "tables", "navigation", "menus", "layout primitives"],
-      "can_build": ["SaaS interfaces", "admin panels", "dashboards", "client portals", "mobile-like web interfaces"],
+      "stack": [
+        "React",
+        "TypeScript"
+      ],
+      "provides": [
+        "accessible UI components",
+        "dialogs",
+        "forms",
+        "tables",
+        "navigation",
+        "menus",
+        "layout primitives"
+      ],
+      "can_build": [
+        "SaaS interfaces",
+        "admin panels",
+        "dashboards",
+        "client portals",
+        "mobile-like web interfaces"
+      ],
       "composable": true,
       "commercial_use": true
     },
@@ -48,11 +125,29 @@
       "name": "React Hook Form",
       "repo": "https://github.com/react-hook-form/react-hook-form",
       "license": "MIT",
-      "category": ["forms", "frontend"],
+      "category": [
+        "forms",
+        "frontend"
+      ],
       "type": "component",
-      "stack": ["React", "TypeScript"],
-      "provides": ["form state", "validation integration", "field arrays", "React Native support"],
-      "can_build": ["lead forms", "applications", "onboarding", "checkout forms", "quotations", "multi-step workflows"],
+      "stack": [
+        "React",
+        "TypeScript"
+      ],
+      "provides": [
+        "form state",
+        "validation integration",
+        "field arrays",
+        "React Native support"
+      ],
+      "can_build": [
+        "lead forms",
+        "applications",
+        "onboarding",
+        "checkout forms",
+        "quotations",
+        "multi-step workflows"
+      ],
       "composable": true,
       "commercial_use": true
     },
@@ -60,11 +155,27 @@
       "name": "Zod",
       "repo": "https://github.com/colinhacks/zod",
       "license": "MIT",
-      "category": ["validation", "api", "data"],
+      "category": [
+        "validation",
+        "api",
+        "data"
+      ],
       "type": "component",
-      "stack": ["TypeScript"],
-      "provides": ["runtime schemas", "input validation", "type inference"],
-      "can_build": ["safe APIs", "validated forms", "configuration systems", "webhooks", "data pipelines"],
+      "stack": [
+        "TypeScript"
+      ],
+      "provides": [
+        "runtime schemas",
+        "input validation",
+        "type inference"
+      ],
+      "can_build": [
+        "safe APIs",
+        "validated forms",
+        "configuration systems",
+        "webhooks",
+        "data pipelines"
+      ],
       "composable": true,
       "commercial_use": true
     },
@@ -72,11 +183,33 @@
       "name": "Payload",
       "repo": "https://github.com/payloadcms/payload",
       "license": "MIT",
-      "category": ["backend", "cms", "admin", "api"],
+      "category": [
+        "backend",
+        "cms",
+        "admin",
+        "api"
+      ],
       "type": "foundation",
-      "stack": ["Next.js", "TypeScript"],
-      "provides": ["backend", "admin panel", "REST API", "GraphQL", "auth", "content management", "database layer"],
-      "can_build": ["CMS", "SaaS backends", "marketplaces", "customer portals", "business applications"],
+      "stack": [
+        "Next.js",
+        "TypeScript"
+      ],
+      "provides": [
+        "backend",
+        "admin panel",
+        "REST API",
+        "GraphQL",
+        "auth",
+        "content management",
+        "database layer"
+      ],
+      "can_build": [
+        "CMS",
+        "SaaS backends",
+        "marketplaces",
+        "customer portals",
+        "business applications"
+      ],
       "composable": true,
       "commercial_use": true
     },
@@ -84,11 +217,27 @@
       "name": "Umami",
       "repo": "https://github.com/umami-software/umami",
       "license": "MIT",
-      "category": ["analytics", "product-intelligence"],
+      "category": [
+        "analytics",
+        "product-intelligence"
+      ],
       "type": "standalone",
-      "stack": ["TypeScript", "Next.js"],
-      "provides": ["privacy-first analytics", "traffic analytics", "campaign tracking", "conversion tracking"],
-      "can_build": ["analytics dashboards", "website intelligence", "client reporting", "product analytics"],
+      "stack": [
+        "TypeScript",
+        "Next.js"
+      ],
+      "provides": [
+        "privacy-first analytics",
+        "traffic analytics",
+        "campaign tracking",
+        "conversion tracking"
+      ],
+      "can_build": [
+        "analytics dashboards",
+        "website intelligence",
+        "client reporting",
+        "product analytics"
+      ],
       "composable": true,
       "commercial_use": true
     },
@@ -96,11 +245,28 @@
       "name": "Memos",
       "repo": "https://github.com/usememos/memos",
       "license": "MIT",
-      "category": ["productivity", "notes", "knowledge"],
+      "category": [
+        "productivity",
+        "notes",
+        "knowledge"
+      ],
       "type": "standalone",
-      "stack": ["Go"],
-      "provides": ["timeline", "notes", "search", "tags", "self-hosting"],
-      "can_build": ["internal knowledge tools", "team notes", "personal knowledge products", "lightweight publishing tools"],
+      "stack": [
+        "Go"
+      ],
+      "provides": [
+        "timeline",
+        "notes",
+        "search",
+        "tags",
+        "self-hosting"
+      ],
+      "can_build": [
+        "internal knowledge tools",
+        "team notes",
+        "personal knowledge products",
+        "lightweight publishing tools"
+      ],
       "composable": true,
       "commercial_use": true
     },
@@ -108,11 +274,29 @@
       "name": "Vercel Subscription Payments",
       "repo": "https://github.com/vercel/nextjs-subscription-payments",
       "license": "MIT",
-      "category": ["saas", "billing", "payments"],
+      "category": [
+        "saas",
+        "billing",
+        "payments"
+      ],
       "type": "foundation",
-      "stack": ["Next.js", "Supabase", "Stripe"],
-      "provides": ["subscription flow", "Stripe checkout", "customer portal", "billing patterns"],
-      "can_build": ["subscription SaaS", "membership products", "paid tools", "premium portals"],
+      "stack": [
+        "Next.js",
+        "Supabase",
+        "Stripe"
+      ],
+      "provides": [
+        "subscription flow",
+        "Stripe checkout",
+        "customer portal",
+        "billing patterns"
+      ],
+      "can_build": [
+        "subscription SaaS",
+        "membership products",
+        "paid tools",
+        "premium portals"
+      ],
       "composable": true,
       "commercial_use": true,
       "notes": "Repository is archived. Keep as a reference foundation, not an automatic dependency."
@@ -121,11 +305,34 @@
       "name": "Appwrite",
       "repo": "https://github.com/appwrite/appwrite",
       "license": "BSD-3-Clause",
-      "category": ["backend", "auth", "database", "storage", "realtime", "functions"],
+      "category": [
+        "backend",
+        "auth",
+        "database",
+        "storage",
+        "realtime",
+        "functions"
+      ],
       "type": "standalone",
-      "stack": ["PHP", "Docker"],
-      "provides": ["authentication", "databases", "storage", "functions", "messaging", "realtime"],
-      "can_build": ["mobile backends", "SaaS", "AI applications", "customer portals", "internal systems"],
+      "stack": [
+        "PHP",
+        "Docker"
+      ],
+      "provides": [
+        "authentication",
+        "databases",
+        "storage",
+        "functions",
+        "messaging",
+        "realtime"
+      ],
+      "can_build": [
+        "mobile backends",
+        "SaaS",
+        "AI applications",
+        "customer portals",
+        "internal systems"
+      ],
       "composable": true,
       "commercial_use": true
     },
@@ -133,11 +340,29 @@
       "name": "XYFlow",
       "repo": "https://github.com/xyflow/xyflow",
       "license": "MIT",
-      "category": ["workflows", "visual-editor", "ui"],
+      "category": [
+        "workflows",
+        "visual-editor",
+        "ui"
+      ],
       "type": "component",
-      "stack": ["React", "TypeScript"],
-      "provides": ["node graphs", "edges", "canvas interactions", "visual workflow primitives"],
-      "can_build": ["workflow builders", "automation editors", "process maps", "AI agent builders", "logic designers"],
+      "stack": [
+        "React",
+        "TypeScript"
+      ],
+      "provides": [
+        "node graphs",
+        "edges",
+        "canvas interactions",
+        "visual workflow primitives"
+      ],
+      "can_build": [
+        "workflow builders",
+        "automation editors",
+        "process maps",
+        "AI agent builders",
+        "logic designers"
+      ],
       "composable": true,
       "commercial_use": true
     },
@@ -145,11 +370,28 @@
       "name": "TanStack Query",
       "repo": "https://github.com/TanStack/query",
       "license": "MIT",
-      "category": ["data", "frontend", "api"],
+      "category": [
+        "data",
+        "frontend",
+        "api"
+      ],
       "type": "component",
-      "stack": ["TypeScript", "React"],
-      "provides": ["server-state management", "caching", "mutations", "query synchronization"],
-      "can_build": ["data-heavy SaaS", "dashboards", "admin systems", "offline-aware interfaces"],
+      "stack": [
+        "TypeScript",
+        "React"
+      ],
+      "provides": [
+        "server-state management",
+        "caching",
+        "mutations",
+        "query synchronization"
+      ],
+      "can_build": [
+        "data-heavy SaaS",
+        "dashboards",
+        "admin systems",
+        "offline-aware interfaces"
+      ],
       "composable": true,
       "commercial_use": true
     },
@@ -157,11 +399,516 @@
       "name": "TanStack Table",
       "repo": "https://github.com/TanStack/table",
       "license": "MIT",
-      "category": ["ui", "data", "admin"],
+      "category": [
+        "ui",
+        "data",
+        "admin"
+      ],
       "type": "component",
-      "stack": ["TypeScript", "React"],
-      "provides": ["headless tables", "sorting", "filtering", "pagination", "grouping"],
-      "can_build": ["CRM tables", "inventory", "orders", "analytics", "admin panels", "operations dashboards"],
+      "stack": [
+        "TypeScript",
+        "React"
+      ],
+      "provides": [
+        "headless tables",
+        "sorting",
+        "filtering",
+        "pagination",
+        "grouping"
+      ],
+      "can_build": [
+        "CRM tables",
+        "inventory",
+        "orders",
+        "analytics",
+        "admin panels",
+        "operations dashboards"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Next.js SaaS Starter",
+      "repo": "https://github.com/nextjs/saas-starter",
+      "license": "MIT",
+      "category": [
+        "saas",
+        "auth",
+        "billing",
+        "payments"
+      ],
+      "type": "foundation",
+      "stack": [
+        "Next.js",
+        "Postgres",
+        "Drizzle",
+        "Stripe",
+        "shadcn/ui"
+      ],
+      "provides": [
+        "authentication",
+        "teams",
+        "RBAC",
+        "Stripe Checkout",
+        "customer portal",
+        "subscriptions",
+        "activity logging"
+      ],
+      "can_build": [
+        "subscription SaaS",
+        "membership products",
+        "team SaaS",
+        "paid tools"
+      ],
+      "composable": true,
+      "commercial_use": true,
+      "notes": "Official Next.js starter. Current repository is active."
+    },
+    {
+      "name": "OpenStarterKit",
+      "repo": "https://github.com/openstarterkit/nextjs-saas-starter-kit",
+      "license": "MIT",
+      "category": [
+        "saas",
+        "auth",
+        "billing",
+        "payments",
+        "admin"
+      ],
+      "type": "foundation",
+      "stack": [
+        "Next.js",
+        "Prisma",
+        "Better Auth",
+        "Stripe",
+        "Tailwind"
+      ],
+      "provides": [
+        "OAuth",
+        "magic links",
+        "password auth",
+        "2FA",
+        "subscriptions",
+        "one-time payments",
+        "admin",
+        "transactional email",
+        "i18n"
+      ],
+      "can_build": [
+        "SaaS",
+        "membership products",
+        "AI SaaS",
+        "paid tools"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "SaaS Boilerplate",
+      "repo": "https://github.com/ixartz/SaaS-Boilerplate",
+      "license": "MIT",
+      "category": [
+        "saas",
+        "auth",
+        "frontend"
+      ],
+      "type": "foundation",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "shadcn/ui"
+      ],
+      "provides": [
+        "SaaS application structure",
+        "authentication patterns",
+        "UI foundation",
+        "testing and tooling"
+      ],
+      "can_build": [
+        "SaaS",
+        "dashboards",
+        "customer portals",
+        "internal tools"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Hono",
+      "repo": "https://github.com/honojs/hono",
+      "license": "MIT",
+      "category": [
+        "api",
+        "backend",
+        "serverless"
+      ],
+      "type": "framework",
+      "stack": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "provides": [
+        "routing",
+        "middleware",
+        "request handling",
+        "Web Standards APIs"
+      ],
+      "can_build": [
+        "APIs",
+        "webhooks",
+        "microservices",
+        "serverless backends",
+        "edge applications"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "FastAPI",
+      "repo": "https://github.com/fastapi/fastapi",
+      "license": "MIT",
+      "category": [
+        "api",
+        "backend",
+        "python"
+      ],
+      "type": "framework",
+      "stack": [
+        "Python"
+      ],
+      "provides": [
+        "API routing",
+        "validation",
+        "OpenAPI",
+        "dependency injection",
+        "async support"
+      ],
+      "can_build": [
+        "AI APIs",
+        "business APIs",
+        "data services",
+        "backend services"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "tRPC",
+      "repo": "https://github.com/trpc/trpc",
+      "license": "MIT",
+      "category": [
+        "api",
+        "typescript",
+        "frontend"
+      ],
+      "type": "component",
+      "stack": [
+        "TypeScript"
+      ],
+      "provides": [
+        "end-to-end type-safe APIs",
+        "procedures",
+        "input validation patterns"
+      ],
+      "can_build": [
+        "full-stack SaaS",
+        "dashboards",
+        "internal tools",
+        "Next.js applications"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Drizzle ORM",
+      "repo": "https://github.com/drizzle-team/drizzle-orm",
+      "license": "Apache-2.0",
+      "category": [
+        "database",
+        "orm",
+        "typescript"
+      ],
+      "type": "component",
+      "stack": [
+        "TypeScript",
+        "SQL"
+      ],
+      "provides": [
+        "type-safe SQL",
+        "schema definitions",
+        "queries",
+        "migrations"
+      ],
+      "can_build": [
+        "SaaS databases",
+        "APIs",
+        "multi-tenant systems",
+        "analytics backends"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Qdrant",
+      "repo": "https://github.com/qdrant/qdrant",
+      "license": "Apache-2.0",
+      "category": [
+        "ai",
+        "database",
+        "vector-search"
+      ],
+      "type": "standalone",
+      "stack": [
+        "Rust"
+      ],
+      "provides": [
+        "vector database",
+        "similarity search",
+        "metadata filtering",
+        "payload storage"
+      ],
+      "can_build": [
+        "RAG systems",
+        "semantic search",
+        "recommendation engines",
+        "AI knowledge bases"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "LangChain",
+      "repo": "https://github.com/langchain-ai/langchain",
+      "license": "MIT",
+      "category": [
+        "ai",
+        "agents",
+        "rag"
+      ],
+      "type": "framework",
+      "stack": [
+        "Python",
+        "TypeScript"
+      ],
+      "provides": [
+        "agent abstractions",
+        "tools",
+        "retrieval",
+        "model integrations",
+        "chains"
+      ],
+      "can_build": [
+        "AI SaaS",
+        "agents",
+        "RAG applications",
+        "AI automation"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "LlamaIndex",
+      "repo": "https://github.com/run-llama/llama_index",
+      "license": "MIT",
+      "category": [
+        "ai",
+        "rag",
+        "documents"
+      ],
+      "type": "framework",
+      "stack": [
+        "Python",
+        "TypeScript"
+      ],
+      "provides": [
+        "document ingestion",
+        "indexing",
+        "retrieval",
+        "RAG",
+        "data connectors"
+      ],
+      "can_build": [
+        "document AI",
+        "knowledge assistants",
+        "RAG SaaS",
+        "research tools"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Trigger.dev",
+      "repo": "https://github.com/triggerdotdev/trigger.dev",
+      "license": "Apache-2.0",
+      "category": [
+        "workflows",
+        "jobs",
+        "automation"
+      ],
+      "type": "foundation",
+      "stack": [
+        "TypeScript",
+        "Next.js"
+      ],
+      "provides": [
+        "background jobs",
+        "durable tasks",
+        "retries",
+        "schedules",
+        "long-running workflows"
+      ],
+      "can_build": [
+        "automation SaaS",
+        "AI jobs",
+        "email pipelines",
+        "data processing"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "WXT",
+      "repo": "https://github.com/wxt-dev/wxt",
+      "license": "MIT",
+      "category": [
+        "extensions",
+        "browser",
+        "frontend"
+      ],
+      "type": "foundation",
+      "stack": [
+        "TypeScript",
+        "Vite"
+      ],
+      "provides": [
+        "browser extension scaffolding",
+        "cross-browser builds",
+        "content scripts",
+        "extension APIs"
+      ],
+      "can_build": [
+        "Chrome extensions",
+        "Firefox extensions",
+        "lead tools",
+        "AI browser tools"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Tauri",
+      "repo": "https://github.com/tauri-apps/tauri",
+      "license": "Apache-2.0",
+      "category": [
+        "desktop",
+        "apps"
+      ],
+      "type": "framework",
+      "stack": [
+        "Rust",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "provides": [
+        "desktop application shell",
+        "native APIs",
+        "small installers",
+        "web frontend integration"
+      ],
+      "can_build": [
+        "desktop SaaS clients",
+        "utilities",
+        "offline apps",
+        "business tools"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Expo",
+      "repo": "https://github.com/expo/expo",
+      "license": "MIT",
+      "category": [
+        "mobile",
+        "react-native",
+        "apps"
+      ],
+      "type": "framework",
+      "stack": [
+        "React Native",
+        "TypeScript"
+      ],
+      "provides": [
+        "mobile app tooling",
+        "native modules",
+        "build tooling",
+        "device APIs"
+      ],
+      "can_build": [
+        "iOS apps",
+        "Android apps",
+        "mobile SaaS",
+        "field-service apps"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Capacitor",
+      "repo": "https://github.com/ionic-team/capacitor",
+      "license": "MIT",
+      "category": [
+        "mobile",
+        "pwa",
+        "apps"
+      ],
+      "type": "framework",
+      "stack": [
+        "TypeScript",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "provides": [
+        "native mobile runtime",
+        "device APIs",
+        "web-to-mobile packaging"
+      ],
+      "can_build": [
+        "PWA-to-mobile apps",
+        "business apps",
+        "field tools",
+        "mobile SaaS"
+      ],
+      "composable": true,
+      "commercial_use": true
+    },
+    {
+      "name": "Electron",
+      "repo": "https://github.com/electron/electron",
+      "license": "MIT",
+      "category": [
+        "desktop",
+        "apps"
+      ],
+      "type": "framework",
+      "stack": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js"
+      ],
+      "provides": [
+        "Chromium desktop shell",
+        "Node.js integration",
+        "native desktop packaging"
+      ],
+      "can_build": [
+        "desktop SaaS clients",
+        "developer tools",
+        "business software",
+        "cross-platform utilities"
+      ],
       "composable": true,
       "commercial_use": true
     }
